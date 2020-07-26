@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gâteau</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+  <header>
+      <div class="header-inner">
+        <div class="logo"><a href="index.html"><img src="logo/logo.png" alt="ロゴ"></a></div>
+        <div class="wrapper">
+          <div class="search-box">
+            <input type="text" class="input" placeholder="Search" required>
+            <div class="search-btn">
+              <i class="fas fa-search fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <nav>
+      <div>
+        <ul class="navbar pc">
+          <li class="ho"><a href="index.html">Home</a></li>
+          <li class="ho"><a href="#cakes">Cakes</a></li>
+          <li class="ho"><a href="#news">News</a></li>
+          <li class="ho"><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="navbar ph">
+          <li><a href="index.html"><img src="logo/home.png" alt="アイコン1"></a></li>
+          <li><a href="#cakes"><img src="logo/cake.png" alt="アイコン2"></a></li>
+          <li><a href="#news"><img src="logo/news.png" alt="アイコン3"></a></li>
+          <li><a href="#contact"><img src="logo/qa.png" alt="アイコン4"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="MainVisual"></div>
+  <div class="container">
+    <h2 id="cakes">ITEM</h2>
+    <div class="item-outer">
+      <div>
+        <figure class="items">
+          <img src="images/apple.jpg" alt="アップルパイ">
+          <figcaption class="deco">アップルパイ</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="items">
+          <img src="images/cb.jpg" alt="シブースト">
+          <figcaption class="deco">シブースト</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="items">
+          <img src="images/short.jpg" alt="ショートケーキ">
+          <figcaption class="deco">ショートケーキ</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="items">
+          <img src="images/st.jpg" alt="ザッハトルテ">
+          <figcaption class="deco">ザッハトルテ</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="items">
+          <img src="images/ft.jpg" alt="フルーツタルト">
+          <figcaption class="deco">フルーツタルト</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="items">
+          <img src="images/tira.jpg" alt="ティラミス">
+          <figcaption class="deco">ティラミス</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="btn-p">
+      <button class="btn">MORE</button>
+    </div>
+  </div>
+  <div class="container">
+    <h2 id="news">NEWS</h2>
+    <ul class="news-outer">
+      <li class="news">2020.01.12 おやつの時間に♪ティラミスの販売を開始しました</li>
+      <li class="news">2019.11.20 冬季限定ケーキのご案内</li>
+      <li class="news">2019.10.31 HAPPY HALLOWEEN2019</li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="banner">
+      <figure>
+        <img src="images/order.png" alt="ケーキ">
+      </figure>
+    </div>
+    <div class="banner">
+      <figure>
+        <img src="images/banner.png" alt="カップケーキ">
+      </figure>
+    </div>
+  </div>
+  <div class="container">
+    <h2 id="contact">CONTACT</h2>
+    <form>
+      <input name="name" type="text" placeholder="お名前" required>
+      <input name="kana" type="text" placeholder="フリガナ" required>
+      <input name="email" type="email" placeholder="メールアドレス" required>
+      <input name="phone" type="tel" placeholder="電話番号" required>
+      <textarea name="message" placeholder="コメント" required></textarea>
+    </form>
+    <div class="btn-p">
+      <button class="btn">SEND</button>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="f-icons">
+        <div class="f-item">
+          <a href="#"><i class="fab fa-twitter fa-fw fa-2x"></i></a>
+        </div>
+        <div class="f-item">
+          <a href="#"><i class="fab fa-instagram fa-fw fa-2x"></i></a>
+        </div>
+        <div class="f-item">
+          <a href="#"><i class="fab fa-pinterest fa-fw fa-2x"></i></a>
+        </div>
+      </div>
+      <p class="f-copyright">&copy; Gâteau All Rights Reserved</p>
+    </div>
+  </footer>
+  <div id="scroll-top"><a href="#"><i class="fas fa-angle-double-up fa-2x"></i></a></div>
+  <script src="js/scroll.js"></script>
+  <script src="js/vegas.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(function() {
+      $('.MainVisual').vegas({
+        slides: [
+          { src: './images/making1.jpg' },
+          { src: './images/making2.jpg' },
+          { src: './images/making3.jpg' },
+          { src: './images/making4.jpg' }
+        ],
+        delay: 4000,
+        timer: false,
+        overlay: './images/making1.jpg',
+        animation: 'random',
+        transition: 'fade',
+        transitionDuration: 1000
+      });
+    });
+  </script>
+</body>
+</html>
