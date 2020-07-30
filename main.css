@@ -32,8 +32,6 @@ h2 {
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
@@ -324,7 +322,10 @@ figcaption {
 .news {
   font-size: 12px;
   text-decoration: underline;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin: 10px 0;
 }
 
@@ -343,7 +344,6 @@ figcaption {
 }
 
 button {
-  font-family: ;
   width: 180px;
   height: 50px;
   position: relative;
