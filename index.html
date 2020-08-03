@@ -41,7 +41,12 @@
       </div>
     </nav>
   </header>
-  <div class="MainVisual"></div>
+  <div class="MainVisual">
+    <span class="slide1"></span>
+    <span class="slide2"></span>
+    <span class="slide3"></span>
+    <span class="slide4"></span>
+  </div>
   <div class="container">
     <h2 id="cakes">ITEM</h2>
     <div class="item-outer">
@@ -137,25 +142,6 @@
   </footer>
   <div id="scroll-top"><a href="#"><i class="fas fa-angle-double-up fa-2x"></i></a></div>
   <script src="https://popo8899.github.io/Gateau.io/scroll.js"></script>
-  <script src="https://popo8899.github.io/Gateau.io/vegas.min.js"></script>
   <script src="https://popo8899.github.io/Gateau.io/main.js"></script>
-  <script>
-    $(function() {
-      $('.MainVisual').vegas({
-        slides: [
-          { src: './images/making1.jpg' },
-          { src: './images/making2.jpg' },
-          { src: './images/making3.jpg' },
-          { src: './images/making4.jpg' }
-        ],
-        delay: 4000,
-        timer: false,
-        overlay: './images/making1.jpg',
-        animation: 'random',
-        transition: 'fade',
-        transitionDuration: 1000
-      });
-    });
-  </script>
 </body>
 </html>
